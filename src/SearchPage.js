@@ -53,13 +53,28 @@ function SearchPage(){
         <Link to="/tools">Tools</Link>
     </div>
     </div>
-    <div className="searchPage_results"></div>
 </div>
 </div>
-
-<div className="searchPage_results">
 </div>
-</div>
+{term && (
+    <div className="searchPage_results">
+        <p className="searchPage_resultCount">
+          About {data?.searchInformation.formattedTotalResults} result ({data?.searchInformation.formattedSearchTime} seconds) for {term}
+        </p>
+        {data?.items.map(item => (
+            <div className="searchPage_result">
+                <a href={item.link}>
+                    {item.pagemap?.cse_image?.length > 0 && item.pagemap?.cse_image[0]?.src &&(<img className="searchPage_resultImage" scr={item.pagemap?.cse_image[0]?.src} alt=""/>)}
+                {item.displayLink}
+                </a> 
+                <a className="searchPage_resultTitle" href={item.link}>
+                <h2>{item.title}</h2>
+                </a>
+                <p className="searchPage_resultSnippet">{item.snippet}</p>
+            </div>
+            ))}
+    </div>
+    )}
         </div>
     )
 }
