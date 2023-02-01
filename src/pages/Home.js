@@ -5,10 +5,10 @@ import AppsIcon from '@mui/icons-material/Apps';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import "./Search.js";
 import SearchIcon from '@mui/icons-material/Search';
+
 function Home(){
     return(
-        <div className="home">
-<h1>Homepage</h1>
+        <div className="homes">
 <div className="home_header">
 <div className="home_headerLeft">
 <Link to="/about">About</Link>
