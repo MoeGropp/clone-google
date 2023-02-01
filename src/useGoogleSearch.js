@@ -1,4 +1,3 @@
-import { SettingsSystemDaydreamTwoTone } from "@mui/icons-material";
 import { useState, useEffect } from "react";
 import API_KEY from "./keys";
 

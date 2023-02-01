@@ -4,10 +4,10 @@ import { useStateValue } from "./StateProvider";
 import useGoogleSearch from "./useGoogleSearch";
 import { Link } from "@mui/material";
 import Search from "./pages/Search";
-import SearchIcon from "@material-ui/icons/Search";
+import SearchIcon from '@mui/icons-material/Search';
 import  LocalOfferIcon  from "@mui/icons-material/LocalOffer";
 import  DescriptionIcon  from "@mui/icons-material/Description";
-import ImageIcon from "@mui/material/icons/Image";
+import ImageIcon from '@mui/icons-material/Image';
 import  RoomIcon  from "@mui/icons-material/Room";
 import  MoreVertIcon  from "@mui/icons-material/MoreVert";
 
