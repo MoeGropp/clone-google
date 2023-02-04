@@ -35,14 +35,19 @@
 }
 
 .home_body{
-    display: flex;
-    flex:1;
-    margin-top: 10%;
+   display: flex;
+   flex: 1;
+   margin: auto;
+    
     flex-direction: column;
     width:min-content;
-}
 
+} 
 .home_body > img{
+    object-fit: contain;
+    height: 100px;
+    }
 
-}
+
+
 

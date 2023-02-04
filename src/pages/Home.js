@@ -3,8 +3,7 @@ import "./Home.css";
 import { Link } from "@mui/material";
 import AppsIcon from '@mui/icons-material/Apps';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-import "./Search.js";
-import SearchIcon from '@mui/icons-material/Search';
+import Search from './Search';
 
 function Home(){
     return(
@@ -22,9 +21,9 @@ function Home(){
 </div>
 </div>
 <div className="home_body">
-<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="" />
+<center><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="" /></center>
 <div className="home_inputContainer">
-<SearchIcon />
+<Search />
 </div>
 </div>
 </div>
