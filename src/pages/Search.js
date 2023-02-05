@@ -21,7 +21,7 @@ function Search({hideButtons = false}) {
             term: input
         })
 
-        history.push("/search");
+        history("/search");
     };
     return(
         <form className="search">
@@ -44,4 +44,5 @@ function Search({hideButtons = false}) {
         </form>
     );
 }
-export default Search
+export default Search;
+console.log("search")

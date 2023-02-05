@@ -1,4 +1,5 @@
 .searchPage_header{
+    display: flex;
     position: sticky;
     top: 0;
     background-color: white;
@@ -18,27 +19,27 @@
     margin: unset;
     max-width: unset;
 }
-.searchPage.options{
+.searchPage_options{
     display: flex;
     align-items: center;
     color: gray;
 }
-.searchPage.options a, .searchPage.optionsRight a{
+.searchPage_options a, .searchPage_optionsRight a{
     text-decoration: none;
     color: gray;
 }
-.searchPage.optionsLeft, .searchPage.optionsRight{
+.searchPage_optionsLeft, .searchPage_optionsRight{
     display: flex;
 }
-.searchPage.optionsRight{
-    margin:80px ;
+.searchPage_optionsRight{
+    margin-left: 80px ;
 }
-.searchPage.option{
+.searchPage_option{
     display: flex;
     align-items: center;
     margin-right: 20px;
 }
-.searchPage.option a{
+.searchPage_option a{
     margin-left: 5px;
 }
 .searchPage_result{
@@ -57,7 +58,7 @@
 .searchPage_resultTitle{
     text-decoration: none;
 }
-.searchPage_resultTitle{
+.searchPage_resultTitle:hover{
     text-decoration: underline;
 }
 .searchPage_resultTitle > h2{

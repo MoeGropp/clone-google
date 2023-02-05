@@ -5,10 +5,11 @@ const CONTEXT_KEY = "d6a1ef4834dae4296";
 
 const useGoogleSearch = (term) => {
     const [data, setData] = useState(null);
+   
     useEffect(() => {
 const fetchData = async() => {
     fetch(
-        `https://www.googleapis.com/customesearch/v1?keys=${API_KEY}&cx=${CONTEXT_KEY}&q=${term}`
+        `https://www.googleapis.com/customsearch/v1?key=${API_KEY}&cx=${CONTEXT_KEY}&q=${term}`
     )
     .then(response => response.json())
     .then(result => {setData(result)})

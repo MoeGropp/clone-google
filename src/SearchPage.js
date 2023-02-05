@@ -2,7 +2,7 @@ import React from "react";
 import "./SearchPage.css";
 import { useStateValue } from "./StateProvider";
 import useGoogleSearch from "./useGoogleSearch";
-import { Link } from "@mui/material";
+import { Link } from "react-router-dom";
 import Search from "./pages/Search";
 import SearchIcon from '@mui/icons-material/Search';
 import  LocalOfferIcon  from "@mui/icons-material/LocalOffer";
@@ -69,7 +69,7 @@ function SearchPage(){
             <div className="searchPage_result">
                 <a href={item.link}>
                     {item.pagemap?.cse_image?.length > 0 && item.pagemap?.cse_image[0]?.src &&(<img className="searchPage_resultImage" scr={item.pagemap?.cse_image[0]?.src} alt=""/>)}
-                {item.displayLink}
+                    {item.displayLink}
                 </a> 
                 <a className="searchPage_resultTitle" href={item.link}>
                 <h2>{item.title}</h2>
