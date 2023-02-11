@@ -21,7 +21,7 @@ function Home(){
 </div>
 </div>
 <div className="home_body">
-<center><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="" /></center>
+<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="" />
 <div className="home_inputContainer">
 <Search />
 </div>
